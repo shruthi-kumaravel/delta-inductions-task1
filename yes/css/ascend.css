@@ -1,0 +1,103 @@
+body {
+	height: 100vh;
+	font-family: 'Nova Slim', cursive;
+	padding: 0;
+	margin: 0;
+}
+
+.hero {
+	width: 100%;
+	margin: auto;
+	background-color: #1C2C54;
+	padding: 10px;
+}
+
+.hero > h1 {
+	color: white;
+	text-align: center;
+	width: 100%;
+	font-family: 'Nova Square', cursive;
+}
+
+button {
+	border: 2px solid white;
+	border-radius: 2em;
+	color: white;
+	background: none;
+	margin: 5px auto;
+	text-transform: uppercase;
+	font-family: 'Nova Slim', cursive;
+	padding: 5px 10px;
+	cursor: pointer;
+	width: 100%;
+}
+
+button:hover {
+	color: #1C2C54;
+	background-color: white;
+}
+
+#timer {
+	border: 2px solid white;
+	padding: 5px 10px;
+}
+
+.controls {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+#running {
+	display: inline-block;
+}
+
+#timer * {
+	color: white;
+	font-family: 'Nova Mono', monospace;
+}
+
+#grid {
+	margin: 0 auto;
+}
+
+.square {
+	width: 5rem;
+	height: 5rem;
+	line-height: 5em;
+	text-align: center;
+	font-family: sans-serif;
+	background: #1C2C54;
+	cursor: pointer;
+	border-radius: 0.25em;
+	color: white;
+}
+
+.square.selected {
+	background-color: #4BC3B5;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:30px;
+	right:20px;
+	background-color:#1C2C54;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.float:hover {
+	cursor: pointer;
+}
+
+.float.up{
+	bottom:100px;
+}
+
+.my-float{
+	margin-top:22px;
+}

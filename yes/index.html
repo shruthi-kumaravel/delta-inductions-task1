@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FortyShadesOfGray</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&family=Nova+Slim&family=Nova+Square&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/difficulty.css">
+    <link rel="stylesheet" href="css/ascend.css">
+    <link rel="stylesheet" href="libs/animate.css">
+</head>
+
+<body>
+
+    <div class="hero">
+        <h1 class="title">Forty Shades Of Gray</h1>
+
+        <div class="controls">
+
+            <div id="start">
+              
+                <button id="button-start">Start</button>
+                <button id="btn-clear">Leaderboard CLear</button>
+            </div>
+
+            <div id="running" style="display: none;">
+                <div id="timer" disabled>
+                    <span id="mins">00</span>
+                    <span>:</span>
+                    <span id="secs">00</span>
+                    <span>:</span>
+                    <span id="msecs">00</span>
+                </div>
+                <button id="button-stop" style="display: block;">Stop</button>
+                <button id="button-reset" style="display: none;">Reset</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <br>
+    <table id="grid"></table>
+
+    <a id="btn-star" class="float">
+        <i class="fa fa-star my-float"></i>
+    </a>
+
+    <!-- Modal -->
+    <div class="modal">
+        <div class="modal-content">
+            <h1>High Scores</h1>
+            <ol class="hall-of-fame">
+            </ol>
+            <button id="btn-close" class="btn-close">Close</button>
+        </div>
+    </div>
+
+    <script src="js/hooks.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/fortyshades.js"></script>
+</body>
+
+</html>
